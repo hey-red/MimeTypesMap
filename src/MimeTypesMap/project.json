@@ -2,6 +2,14 @@
   "description": "Simple dictionary provides a few methods to lookup mime type/extension, generated From Apache's mime.types.",
   "version": "1.0.0",
   "authors": [ "red" ],
+  "packOptions": {
+    "summary": "Simple dictionary provides a few methods to lookup mime type/extension, generated From Apache's mime.types.",
+    "tags": [ "mime", "mimetype" ],
+    "projectUrl": "https://github.com/hey-red/MimeTypesMap",
+    "repository": { "type": "git" },
+    "licenseUrl": "https://raw.githubusercontent.com/hey-red/MimeTypesMap/master/LICENSE",
+    "releaseNotes": "Initial release."
+  },
   "frameworks": {
     "net451": {},
     "netstandard1.3": {
