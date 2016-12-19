@@ -14,7 +14,7 @@ Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "MimeTypesMap", "src\MimeTyp
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{AC894DC1-AD55-4A36-9D1D-BA7610F43E61}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "MimeTypesMapTests", "MimeTypesMapTests\MimeTypesMapTests.xproj", "{13180288-0ACC-4B7A-8D2C-CDB9431F99FA}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "MimeTypesMapTests", "test\MimeTypesMapTests\MimeTypesMapTests.xproj", "{13180288-0ACC-4B7A-8D2C-CDB9431F99FA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
