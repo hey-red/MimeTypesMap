@@ -1,0 +1,19 @@
+﻿{
+  "description": "Simple dictionary provides a few methods to lookup mime type/extension, generated From Apache's mime.types.",
+  "version": "1.0.0",
+  "authors": [ "red" ],
+  "frameworks": {
+    "net451": {},
+    "netstandard1.3": {
+      "dependencies": {
+        "System.Runtime.InteropServices": "4.1.0",
+        "System.Collections": "4.0.11",
+        "System.Linq": "4.1.0"
+      }
+    }
+  },
+  "buildOptions": {
+    "allowUnsafe": true,
+    "keyFile": "../../key.snk"
+  }
+}
