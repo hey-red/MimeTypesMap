@@ -1,5 +1,5 @@
 # MimeTypesMap
-Simple dictionary provides a few methods to lookup mime type/extension, generated From Apache's mime.types.
+Simple dictionary provides a few methods to lookup mime type/extension, generated from Apache's mime.types.
 
 ## Install
 via [NuGet](https://www.nuget.org/packages/MimeTypesMap):
