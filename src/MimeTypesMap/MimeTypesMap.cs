@@ -807,7 +807,7 @@ namespace HeyRed.Mime
 
         public static void AddOrUpdate(string mime, string extension)
         {
-            _mimeTypeMap.Value[mime] = extension;
+            _mimeTypeMap.Value[extension] = mime;
         }
     }
 }
