@@ -18,4 +18,4 @@ MimeTypesMap.AddOrUpdate(string mime, string extension);
 ```
 
 ## License
-[MIT](\LICENSE)
+[MIT](LICENSE)
