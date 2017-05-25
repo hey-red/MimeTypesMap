@@ -11,13 +11,14 @@
     <PublicSign Condition=" '$(OS)' != 'Windows_NT' ">true</PublicSign>
     <PackageId>MimeTypesMap</PackageId>
     <PackageTags>mime;mimetype</PackageTags>
-    <PackageReleaseNotes>Initial release.</PackageReleaseNotes>
+    <PackageReleaseNotes>Fix AddOrUpdate method</PackageReleaseNotes>
     <PackageProjectUrl>https://github.com/hey-red/MimeTypesMap</PackageProjectUrl>
     <PackageLicenseUrl>https://raw.githubusercontent.com/hey-red/MimeTypesMap/master/LICENSE</PackageLicenseUrl>
     <RepositoryType>git</RepositoryType>
     <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
     <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
     <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup Condition=" '$(TargetFramework)' == 'net451' ">
