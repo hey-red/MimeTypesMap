@@ -9,7 +9,7 @@
     <SignAssembly>true</SignAssembly>
     <PackageId>MimeTypesMap</PackageId>
     <PackageTags>mime;mimetype</PackageTags>
-    <PackageReleaseNotes>Fix AddOrUpdate method</PackageReleaseNotes>
+    <PackageReleaseNotes>Update targets</PackageReleaseNotes>
     <PackageProjectUrl>https://github.com/hey-red/MimeTypesMap</PackageProjectUrl>
     <PackageLicenseUrl>https://raw.githubusercontent.com/hey-red/MimeTypesMap/master/LICENSE</PackageLicenseUrl>
     <RepositoryType>git</RepositoryType>
