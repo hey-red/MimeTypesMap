@@ -797,8 +797,7 @@ namespace HeyRed.Mime
             {
                 ext = fileName.Substring(ind + 1);
             }
-            string result;
-            if (_mimeTypeMap.Value.TryGetValue(ext, out result))
+            if (_mimeTypeMap.Value.TryGetValue(ext, out string result))
             {
                 return result;
             }

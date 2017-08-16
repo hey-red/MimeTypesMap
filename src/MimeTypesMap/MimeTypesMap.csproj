@@ -3,12 +3,10 @@
   <PropertyGroup>
     <Description>Simple dictionary provides a few methods to lookup mime type/extension, generated From Apache's mime.types.</Description>
     <Authors>red</Authors>
-    <TargetFrameworks>net451;netstandard1.3</TargetFrameworks>
-    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <TargetFrameworks>netstandard1.3;net45;net40</TargetFrameworks>
     <AssemblyName>MimeTypesMap</AssemblyName>
     <AssemblyOriginatorKeyFile>../../key.snk</AssemblyOriginatorKeyFile>
     <SignAssembly>true</SignAssembly>
-    <PublicSign Condition=" '$(OS)' != 'Windows_NT' ">true</PublicSign>
     <PackageId>MimeTypesMap</PackageId>
     <PackageTags>mime;mimetype</PackageTags>
     <PackageReleaseNotes>Fix AddOrUpdate method</PackageReleaseNotes>
@@ -18,18 +16,7 @@
     <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
     <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
     <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
   </PropertyGroup>
-
-  <ItemGroup Condition=" '$(TargetFramework)' == 'net451' ">
-    <Reference Include="System" />
-    <Reference Include="Microsoft.CSharp" />
-  </ItemGroup>
-
-  <ItemGroup Condition=" '$(TargetFramework)' == 'netstandard1.3' ">
-    <PackageReference Include="System.Collections" Version="4.3.0" />
-    <PackageReference Include="System.Runtime.InteropServices" Version="4.3.0" />
-    <PackageReference Include="System.Linq" Version="4.3.0" />
-  </ItemGroup>
   
 </Project>

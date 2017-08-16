@@ -25,7 +25,6 @@ namespace MimeTypesMapTests
             var ext = MimeTypesMap.GetExtension("image/jpeg");
             Assert.Equal("jpeg", ext);
         }
-
         
         [Fact]
         public void AddOrUpdate()
