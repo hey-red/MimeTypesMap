@@ -46,8 +46,7 @@ namespace HeyRed.Mime
             {
                 ext = fileName.Substring(ind + 1);
             }
-            string result;
-            if (_mimeTypeMap.Value.TryGetValue(ext, out result))
+            if (_mimeTypeMap.Value.TryGetValue(ext, out string result))
             {
                 return result;
             }
@@ -74,9 +73,12 @@ private static Dictionary<string, string> GetMimeTypeList()
             {
                 if (line.Trim().StartsWith("#")) continue;
                 var parts = Regex.Split(line, @"\s+");
-                if (parts.Count() < 2) continue;
-                if (tempDict.ContainsKey(parts[1])) continue;
-                tempDict.Add(parts[1], parts[0]);
+                if (parts.Length < 2) continue;
+				for (int i = 1; i < parts.Length; i++)
+				{
+					if (tempDict.ContainsKey(parts[i])) continue;
+					tempDict.Add(parts[i], parts[0]);
+				}
             }
         }
         return tempDict;
