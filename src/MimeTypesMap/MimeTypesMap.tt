@@ -44,7 +44,7 @@ namespace HeyRed.Mime
             var ind = ext.LastIndexOf('.');
             if (ind != -1 && ext.Length > ind + 1)
             {
-                ext = fileName.Substring(ind + 1);
+                ext = fileName.Substring(ind + 1).ToLower();
             }
             if (_mimeTypeMap.Value.TryGetValue(ext, out string result))
             {
