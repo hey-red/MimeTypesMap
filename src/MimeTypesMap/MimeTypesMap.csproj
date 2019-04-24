@@ -3,9 +3,9 @@
   <PropertyGroup>
     <Description>Simple dictionary provides a few methods to lookup mime type/extension, generated From Apache's mime.types.</Description>
     <Authors>red</Authors>
-    <TargetFrameworks>netstandard1.3;netstandard2.0</TargetFrameworks>
+    <TargetFrameworks>netstandard1.1;netstandard2.0</TargetFrameworks>
     <AssemblyName>MimeTypesMap</AssemblyName>
-    <AssemblyOriginatorKeyFile>../../key.snk</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>../../../key.snk</AssemblyOriginatorKeyFile>
     <SignAssembly>true</SignAssembly>
     <PackageId>MimeTypesMap</PackageId>
     <PackageTags>mime;mimetype</PackageTags>
