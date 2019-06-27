@@ -11,7 +11,7 @@ namespace HeyRed.Mime
         private static readonly string _defaultMimeType = "application/octet-stream";
 
         // http://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types
-        private static Lazy<Dictionary<string, string>> _mimeTypeMap = new Lazy<Dictionary<string, string>>(() => new Dictionary<string, string>()
+        private static Lazy<Dictionary<string, string>> _mimeTypeMap = new Lazy<Dictionary<string, string>>(() => new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase)
         {
             ["ez"] = "application/andrew-inset",
             ["aw"] = "application/applixware",

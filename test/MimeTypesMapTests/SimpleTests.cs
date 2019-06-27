@@ -20,6 +20,13 @@ namespace MimeTypesMapTests
         }
 
         [Fact]
+        public void GetMimeTypeByUpperExtension()
+        {
+            var mime = MimeTypesMap.GetMimeType("JPG");
+            Assert.Equal("image/jpeg", mime);
+        }
+
+        [Fact]
         public void GetExtension()
         {
             var ext = MimeTypesMap.GetExtension("image/jpeg");
