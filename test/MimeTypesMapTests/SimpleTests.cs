@@ -1,4 +1,5 @@
-﻿using HeyRed.Mime;
+﻿using System.Collections.Generic;
+using HeyRed.Mime;
 using Xunit;
 
 namespace MimeTypesMapTests
@@ -31,6 +32,19 @@ namespace MimeTypesMapTests
         {
             var ext = MimeTypesMap.GetExtension("image/jpeg");
             Assert.Equal("jpeg", ext);
+        }
+
+        [Fact]
+        public void GetExtensions()
+        {
+            var expected = new List<string>
+            {
+                "ai",
+                "eps",
+                "ps"
+            };
+            var exts = MimeTypesMap.GetExtensions("application/postscript");
+            Assert.Equal(expected, exts);
         }
         
         [Fact]
