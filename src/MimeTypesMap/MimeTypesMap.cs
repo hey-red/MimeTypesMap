@@ -1015,7 +1015,7 @@ namespace HeyRed.Mime
             {
                 return ext;
             }
-            return new List<string> { "???" };
+            return new List<string> { _defaultExtension };
         }
 
         public static string GetMimeType(string fileName)
