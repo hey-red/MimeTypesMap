@@ -38,6 +38,16 @@ namespace HeyRed.Mime
             return _defaultExtension;
         }
 
+        public static IEnumerable<string> GetExtensions(string mime)
+        {
+            var ext = _mimeTypeMap.Value.Where(x => x.Value.Contains(mime)).Select(x => x.Key);
+            if (ext != null)
+            {
+                return ext;
+            }
+            return new List<string> { _defaultExtension };
+        }
+
         public static string GetMimeType(string fileName)
         {
             string ext = fileName;
