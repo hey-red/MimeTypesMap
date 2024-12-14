@@ -11,12 +11,13 @@
     <PackageTags>mime;mimetype</PackageTags>
     <PackageReleaseNotes>Use ignore case for file extensions</PackageReleaseNotes>
     <PackageProjectUrl>https://github.com/hey-red/MimeTypesMap</PackageProjectUrl>
-    <PackageLicenseUrl>https://raw.githubusercontent.com/hey-red/MimeTypesMap/master/LICENSE</PackageLicenseUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <RepositoryType>git</RepositoryType>
     <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
     <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
     <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
-    <Version>1.0.8</Version>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <Version>1.0.9</Version>
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
@@ -26,6 +27,9 @@
     <PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0" PrivateAssets="All" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include="..\..\README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
 
   <ItemGroup>
     <None Update="MimeTypesMap.tt">
