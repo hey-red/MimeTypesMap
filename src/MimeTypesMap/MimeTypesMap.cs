@@ -893,6 +893,7 @@ namespace HeyRed.Mime
             ["in"] = "text/plain",
             ["dsc"] = "text/prs.lines.tag",
             ["rtx"] = "text/richtext",
+            ["rtf"] = "text/rtf",
             ["sgml"] = "text/sgml",
             ["sgm"] = "text/sgml",
             ["tsv"] = "text/tab-separated-values",
